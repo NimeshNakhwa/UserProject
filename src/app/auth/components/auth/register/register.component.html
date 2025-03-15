@@ -1,7 +1,7 @@
 <section class="container">
     <h2 class="large text-primary">Sign Up</h2>
     <p class="lead"><i class="fas fa-user"></i> Create Your Account</p>
-    <form class="form">
+    <form class="form" [formGroup]="registerForm" (ngSubmit)="registerSubmit()">
       <div class="form-group">
         <input type="text" placeholder="Name" />
         <div class="error-message">Name is required</div>
