@@ -37,7 +37,7 @@ export class RegisterComponent {
           if (res.token) {
             localStorage.setItem('token', res.token);
              this.router.navigate(['/dashboard']);
-            // alert('Registration done');
+             alert('Registration done');
           } else {
             console.error('Error: No token received in response');
           }
